@@ -22,3 +22,7 @@ CSS in Next.js Module
 
 - css-Module 클래스명은 겹치지 않는다
   클래스명 충돌을 피할 수 있다.
+
+- styled-jsx를 사용하자
+  -> css를 외우기 힘들다
+  -> 파일이 분리되어있다.
