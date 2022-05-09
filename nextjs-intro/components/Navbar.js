@@ -14,13 +14,12 @@ const Navbar = () => {
       </Link>
       <style jsx>{`
         nav {
-          background-color: tomato;
         }
         a {
           text-decoration: none;
         }
         .active {
-          color: white;
+          color: coral;
         }
       `}</style>
     </nav>

@@ -1,11 +1,9 @@
-import { useState } from "react";
-import Navbar from "../components/Navbar";
-export default function Home() {
-  const [counter, setCounter] = useState(0);
+const Home = () => {
   return (
     <div>
-      <h1>Hellow Next.js</h1>
-      <Navbar />
+      <h1>Home</h1>
     </div>
   );
-}
+};
+
+export default Home;
