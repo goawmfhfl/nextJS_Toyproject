@@ -17,3 +17,8 @@ JS로 UI를 보여주기 전에 pre-render된 UI를 사용자
 화면에 보여질 수 있게 할 수 있다.
 
 초기상태의 컴포넌트를 보여줄 수 있다.
+
+CSS in Next.js Module
+
+- css-Module 클래스명은 겹치지 않는다
+  클래스명 충돌을 피할 수 있다.
