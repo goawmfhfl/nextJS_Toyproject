@@ -7,10 +7,20 @@ const NavBar = () => {
     <nav>
       <div className="wrapper">
         <Link href={"/"}>
-          <a className={router.pathname === "/" ? "active" : ""}>Home</a>
+          <a className={router.pathname === "/" ? "active" : ""}>랭크</a>
+        </Link>
+        <Link href={"/popular"}>
+          <a className={router.pathname === "/about" ? "active" : ""}>인기</a>
+        </Link>
+        <Link href={"/upcoming"}>
+          <a className={router.pathname === "/about" ? "active" : ""}>
+            현재상영
+          </a>
         </Link>
         <Link href={"/about"}>
-          <a className={router.pathname === "/about" ? "active" : ""}>About</a>
+          <a className={router.pathname === "/about" ? "active" : ""}>
+            상영예정
+          </a>
         </Link>
       </div>
       <style jsx>{`
@@ -27,7 +37,7 @@ const NavBar = () => {
         }
         .wrapper {
           display: flex;
-          gap: 10px;
+          gap: 15px;
         }
         nav a {
           font-weight: 600;
