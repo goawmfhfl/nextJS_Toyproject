@@ -1,6 +1,6 @@
 # NextMovieApp
 
-React 환경에서 NextJs를 사용하여 SSR를 구현해보는 프로젝트 입니다.
+React 환경에서 NextJs를 사용하여 SSR를 구현하는 토이 프로젝트 입니다.
 
 <br/>
 
@@ -89,3 +89,25 @@ request time에 반드시 데이터를 fetch해와야 하는 페이지를 pre-re
 이 접근 방식은 예를 들어 사용자 대시보드 페이지에 적합합니다. 왜냐하면 대시보드는 사용자별 비공개 페이지이기 때문에 SEO와는 관련이 없으며 페이지를 미리 렌더링할 필요가 없다. 또한 데이터는 자주 업데이트되므로 요청 시 데이터를 가져와야 한다
 
 즉, 영화 상세페이지 정보, 영화 리스트를 불러오는 정보같은 경우에는 SSR이 좋다고 이해를했다. 그래야지 검색엔진 최적화에 유리하니깐.
+
+<br/>
+
+# 파일구조
+
+nextjs-intro
+┣ pages
+┃ ┣ movies
+┃ ┃ ┗ [...detail].jsx
+┃ ┣ \_app.jsx
+┃ ┣ index.jsx
+┃ ┣ showing.jsx
+┃ ┣ toprated.jsx
+┃ ┗ upcoming.jsx
+┣ styles
+┃ ┗ globals.css
+┣ .env
+┣ .eslintrc.json
+┣ .gitignore
+┣ next.config.js
+┣ package.json
+┗ yarn.lock
