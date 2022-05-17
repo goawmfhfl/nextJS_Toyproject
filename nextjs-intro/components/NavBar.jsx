@@ -7,18 +7,18 @@ const NavBar = () => {
     <nav>
       <div className="wrapper">
         <Link href={"/"}>
-          <a className={router.pathname === "/" ? "active" : ""}>랭크</a>
+          <a className={router.pathname === "/" ? "active" : ""}>홈</a>
         </Link>
         <Link href={"/popular"}>
-          <a className={router.pathname === "/about" ? "active" : ""}>인기</a>
+          <a className={router.pathname === "/popular" ? "active" : ""}>인기</a>
         </Link>
-        <Link href={"/upcoming"}>
-          <a className={router.pathname === "/about" ? "active" : ""}>
+        <Link href={"/showing"}>
+          <a className={router.pathname === "/showing" ? "active" : ""}>
             현재상영
           </a>
         </Link>
-        <Link href={"/about"}>
-          <a className={router.pathname === "/about" ? "active" : ""}>
+        <Link href={"/upcoming"}>
+          <a className={router.pathname === "/upcoming" ? "active" : ""}>
             상영예정
           </a>
         </Link>

@@ -1,12 +1,12 @@
 import Seo from "../components/Seo";
 
-const About = () => {
+const Popular = () => {
   return (
     <div>
-      <Seo title={"AboutPage"} />
+      <Seo title={"PopularPage"} />
       <h1>AboutPage</h1>
     </div>
   );
 };
 
-export default About;
+export default Popular;
