@@ -35,18 +35,19 @@ const NavBar = () => {
           padding-bottom: 10px;
           box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
             rgba(18, 8, 8, 0.3) 0px 30px 60px -30px;
-          background-color: orange;
+          background-color: #112b3c;
         }
         .wrapper {
           display: flex;
           gap: 15px;
         }
         nav a {
+          color: #efefef;
           font-weight: 600;
           font-size: 18px;
         }
-        .active {
-          color: tomato;
+        nav a.active {
+          color: #f66b0e;
         }
       `}</style>
     </nav>
