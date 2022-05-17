@@ -1,9 +1,9 @@
 import Link from "next/link";
 import Seo from "../components/Seo";
-const Popular = ({ results }) => {
+const Toprated = ({ results }) => {
   return (
     <div>
-      <Seo title={"Popular"} />
+      <Seo title={"Toprated"} />
       {results.length > 0 ? (
         <ul className="list">
           {results.map((movie) => (
@@ -62,11 +62,11 @@ const Popular = ({ results }) => {
   );
 };
 
-export default Popular;
+export default Toprated;
 
 export async function getServerSideProps() {
   const { results } = await (
-    await fetch(`http://localhost:3000/api/movies`)
+    await fetch(`http://localhost:3000/api/top_rated`)
   ).json();
   return {
     props: {

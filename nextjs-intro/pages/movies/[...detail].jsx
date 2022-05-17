@@ -58,7 +58,7 @@ export default Detail;
 
 export async function getServerSideProps({ params: { detail } }) {
   const info = await (
-    await fetch(`http://localhost:3000/api/movie/${detail[0]}`)
+    await fetch(`http://localhost:3000/api/movies/${detail[0]}`)
   ).json();
   return {
     props: {

@@ -9,8 +9,10 @@ const NavBar = () => {
         <Link href={"/"}>
           <a className={router.pathname === "/" ? "active" : ""}>홈</a>
         </Link>
-        <Link href={"/popular"}>
-          <a className={router.pathname === "/popular" ? "active" : ""}>인기</a>
+        <Link href={"/toprated"}>
+          <a className={router.pathname === "/toprated" ? "active" : ""}>
+            순위
+          </a>
         </Link>
         <Link href={"/showing"}>
           <a className={router.pathname === "/showing" ? "active" : ""}>

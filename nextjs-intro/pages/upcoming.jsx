@@ -66,7 +66,7 @@ export default Upcoming;
 
 export async function getServerSideProps() {
   const { results } = await (
-    await fetch(`http://localhost:3000/api/movies`)
+    await fetch(`http://localhost:3000/api/upcoming`)
   ).json();
   return {
     props: {
