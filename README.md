@@ -2,6 +2,12 @@
 
 React 환경에서 NextJs를 사용하여 SSR를 구현하는 토이 프로젝트 입니다.
 
+<div style="display:flex">
+<img width="472" alt="스크린샷 2022-05-17 13 32 33" src="https://user-images.githubusercontent.com/79143800/168729538-14b71549-65cc-4dde-bb06-9ca5248a005c.png">
+<img width="475" alt="스크린샷 2022-05-17 13 32 45" src="https://user-images.githubusercontent.com/79143800/168729571-6f73f767-9edd-4345-a1a6-e2a2d6dd30b5.png">
+</div>
+
+
 <br/>
 
 # CSR vs SSR
@@ -37,6 +43,8 @@ export async function getServerSideProps() {
 기존 프론트엔드 코드를 작성하는 곳에 `getServerSideProps` 를 작성한다. 이로써 프론트에서 백엔드 데이터를 제어할 수 있게된다. 해당 코드는 서버에서 동작한다. 반환값은 해당 ViewComponents에 Props로 전달된다.
 
 # 자주 사용되는 패턴
+<img width="472" alt="스크린샷 2022-05-17 13 32 33" src="https://user-images.githubusercontent.com/79143800/168729762-2bd42413-a31f-4b9b-9f6b-72474d33190e.png">
+
 
 1. 사용자가 about 페이지로 라우팅을 시도한다고 가정해보자.
 2. about 컴포넌트는 App에 components props로 전달된다.
@@ -94,20 +102,17 @@ request time에 반드시 데이터를 fetch해와야 하는 페이지를 pre-re
 
 # 파일구조
 
-nextjs-intro
-┣ pages
-┃ ┣ movies
-┃ ┃ ┗ [...detail].jsx
-┃ ┣ \_app.jsx
-┃ ┣ index.jsx
-┃ ┣ showing.jsx
-┃ ┣ toprated.jsx
-┃ ┗ upcoming.jsx
-┣ styles
-┃ ┗ globals.css
-┣ .env
-┣ .eslintrc.json
-┣ .gitignore
-┣ next.config.js
-┣ package.json
-┗ yarn.lock
+```
+components
+ ┣ Layout.jsx
+ ┣ NavBar.jsx
+ ┗ Seo.jsx
+pages
+ ┣ movies
+ ┃ ┗ [...detail].jsx
+ ┣ _app.jsx
+ ┣ index.jsx
+ ┣ showing.jsx
+ ┣ toprated.jsx
+ ┗ upcoming.jsx
+ ```
