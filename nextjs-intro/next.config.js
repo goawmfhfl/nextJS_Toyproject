@@ -1,17 +1,7 @@
-// const API_KEY = process.env.API_KEY;
-const API_KEY = "720d589a66f56d0458b9e5729c82da42";
+const API_KEY = process.env.API_KEY;
 
 module.exports = {
   reactStrictMode: true,
-  async redirects() {
-    return [
-      {
-        source: "/old-blog/:path*",
-        destination: "/new-riding-blog/:path*",
-        permanent: false,
-      },
-    ];
-  },
   async rewrites() {
     return [
       {
@@ -19,8 +9,20 @@ module.exports = {
         destination: `https://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}`,
       },
       {
-        source: "/api/movies/:id",
-        destination: `https://api.themoviedb.org/3/movie/:id?api_key=${API_KEY}`,
+        source: "/api/top_rated",
+        destination: `https://api.themoviedb.org/3/movie/top_rated?api_key=${API_KEY}`,
+      },
+      {
+        source: "/api/now_playing",
+        destination: `https://api.themoviedb.org/3/movie/now_playing?api_key=${API_KEY}`,
+      },
+      {
+        source: "/api/upcoming",
+        destination: `https://api.themoviedb.org/3/movie/upcoming?api_key=${API_KEY}`,
+      },
+      {
+        source: "/api/movies/:movie_id",
+        destination: `https://api.themoviedb.org/3/movie/:movie_id?api_key=${API_KEY}`,
       },
     ];
   },
